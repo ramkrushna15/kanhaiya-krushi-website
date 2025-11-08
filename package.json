@@ -1,0 +1,25 @@
+{
+  "name": "kanhaiya-krushi",
+  "version": "2.0.0",
+  "description": "Kanhaiya Krushi - Agricultural Services Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "agriculture",
+    "farming",
+    "krushi",
+    "seva",
+    "kendra"
+  ],
+  "author": "Kanhaiya Krushi Seva Kendra",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
