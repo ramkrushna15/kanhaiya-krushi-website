@@ -14,31 +14,36 @@ export const translations = {
     // Hero Section
     hero: {
       title: 'Kanhaiya Krushi Seva Kendra',
-      subtitle: 'Your Trusted Partner in Agriculture',
-      description: 'Providing comprehensive agricultural services from soil testing to market access',
-      cta: 'Explore Services',
-      location: 'Serving farmers in Jeur and surrounding areas'
+      subtitle: 'Your Trusted Agricultural Partner in Solapur District',
+      description:
+        'End-to-end agri solutions—scientific soil testing, genuine inputs, and expert on-farm advisory for better yields and higher income.',
+      cta: 'Explore Our Services',
+      location: 'Serving farmers across Jeur, Karmala Taluka, and nearby villages'
     },
 
     // Services
     services: {
-      title: 'Our Services',
-      subtitle: 'Comprehensive Agricultural Solutions',
+      title: 'Our Agricultural Services',
+      subtitle: 'Complete, Practical Solutions for Modern Farming',
       soilTesting: {
-        title: 'Soil Testing',
-        description: 'Professional soil analysis to optimize crop yield and fertilizer use'
+        title: 'Scientific Soil Testing',
+        description:
+          'Lab-grade soil analysis with clear, crop-wise nutrient plans designed for Solapur’s soil and climate.'
       },
       fertilizers: {
-        title: 'Fertilizers & Seeds',
-        description: 'Quality fertilizers, seeds, and agricultural inputs at competitive prices'
+        title: 'Quality Agricultural Inputs',
+        description:
+          'Genuine fertilizers, certified seeds, and crop protection from authorized, trusted brands.'
       },
       farmVisits: {
-        title: 'Farm Consultancy',
-        description: 'Expert farm visits and personalized crop advisory services'
+        title: 'Expert Farm Advisory',
+        description:
+          'On-field, problem-solving guidance by experienced agronomists—right from sowing to harvest.'
       },
       marketing: {
-        title: 'Market Access',
-        description: 'Help farmers sell their produce at the best market prices'
+        title: 'Market Linkage Support',
+        description:
+          'Connecting farmers to better buyers and markets for fair pricing and faster payments.'
       },
       bookService: 'Book This Service',
       learnMore: 'Learn More'
@@ -47,35 +52,39 @@ export const translations = {
     // About
     about: {
       title: 'About Kanhaiya Krushi',
-      mainTitle: 'Empowering Farmers Since Inception',
-      description: 'Kanhaiya Krushi is the main umbrella organization dedicated to providing comprehensive agricultural services to farmers. We currently operate Kanhaiya Krushi Seva Kendra at Jeur, offering a wide range of services from soil testing to fertilizer sales and market access.',
+      mainTitle: 'Empowering Farmers Since Our Inception',
+      description:
+        'Kanhaiya Krushi drives agricultural growth and farmer welfare in Solapur District. Through our Kanhaiya Krushi Seva Kendra at Jeur in Karmala Taluka, we provide integrated services—soil testing, quality inputs, technical advisory, and market linkages—to boost productivity and profitability.',
       mission: 'Our Mission',
-      missionText: 'To empower farmers with modern agricultural knowledge, quality inputs, and market access to improve their livelihood and contribute to sustainable farming practices.',
+      missionText:
+        'To enable Solapur’s farmers with scientific know-how, reliable inputs, and market access—raising farm incomes while promoting sustainable practices.',
       vision: 'Our Vision',
-      visionText: 'To become the most trusted agricultural services provider in Maharashtra and expand our services through Farmer Producer Company (FPC) and export operations.',
-      currentOperations: 'Current Operations',
-      operation1: 'Kanhaiya Krushi Seva Kendra at Jeur',
-      operation2: 'Soil Testing Services',
-      operation3: 'Fertilizer and Agricultural Input Sales',
-      operation4: 'Farm Visit and Consultancy Services',
-      operation5: 'Agricultural Product Marketing',
-      futureExpansion: 'Future Expansion',
-      future1: 'Farmer Producer Company (FPC) Formation',
-      future2: 'Export Services for Agricultural Products',
-      future3: 'Multiple Krushi Seva Kendras across Maharashtra',
-      future4: 'Digital Platform for Farmers'
+      visionText:
+        'To become Solapur’s most trusted, full-stack agricultural service partner—and expand across Maharashtra via Farmer Producer Companies (FPCs) and value-added agri services.',
+      currentOperations: 'Current Operations at Jeur',
+      operation1: 'Kanhaiya Krushi Seva Kendra—your full-service agri center',
+      operation2: 'Soil Testing Lab with NPK and micronutrient analysis',
+      operation3:
+        'Authorized dealership for quality fertilizers, seeds, and crop protection',
+      operation4: 'On-farm technical consultancy and crop advisory',
+      operation5: 'Market information and linkage support for better price discovery',
+      futureExpansion: 'Our Expansion Plans',
+      future1: 'Forming an FPC for collective procurement and marketing',
+      future2: 'Export facilitation for regional agri produce',
+      future3: 'New Krushi Seva Kendras across Solapur District',
+      future4: 'A digital platform for real-time advisory and market updates'
     },
 
     // Products
     products: {
-      title: 'Our Products',
-      subtitle: 'Quality Agricultural Inputs',
+      title: 'Agricultural Products',
+      subtitle: 'Quality Inputs for Reliable Yields',
       category: {
         all: 'All Products',
         fertilizers: 'Fertilizers',
         seeds: 'Seeds',
-        pesticides: 'Pesticides',
-        equipment: 'Equipment'
+        pesticides: 'Crop Protection',
+        equipment: 'Farm Equipment'
       },
       inStock: 'In Stock',
       outOfStock: 'Out of Stock',
@@ -86,69 +95,77 @@ export const translations = {
     // Contact
     contact: {
       title: 'Contact Us',
-      subtitle: 'Get in Touch',
-      getInTouch: 'We\'re Here to Help',
-      description: 'Have questions or need assistance? Reach out to us and we\'ll get back to you as soon as possible.',
+      subtitle: 'We’re Here to Help',
+      getInTouch: 'Reach Out to Our Team',
+      description:
+        'Questions about a crop, input, or service? Send us a message—our experts will guide you.',
       form: {
-        name: 'Your Name',
-        email: 'Email Address',
-        phone: 'Phone Number',
+        name: 'Your Full Name',
+        email: 'Email Address (Optional)',
+        phone: 'Mobile Number',
         subject: 'Subject',
-        message: 'Your Message',
-        service: 'Service Interested In',
+        message: 'Your Message / Inquiry',
+        service: 'Service You’re Interested In',
         selectService: 'Select a service',
-        submit: 'Send Message',
-        sending: 'Sending...'
+        submit: 'Submit Inquiry',
+        sending: 'Submitting...'
       },
       info: {
         title: 'Contact Information',
         address: 'Address',
-        addressValue: 'Kanhaiya Krushi Seva Kendra, Jeur, Maharashtra, India',
+        addressValue:
+          'Kanhaiya Krushi Seva Kendra, Jeur, Tal. Karmala, Dist. Solapur, Maharashtra',
         phone: 'Phone',
         email: 'Email',
-        hours: 'Working Hours',
-        hoursValue: 'Monday - Saturday: 9:00 AM - 6:00 PM'
+        hours: 'Business Hours',
+        hoursValue:
+          'Monday to Sunday: 9:00 AM – 6:00 PM (Open all days)'
       },
-      success: 'Message sent successfully! We will contact you soon.',
-      error: 'Failed to send message. Please try again or contact us directly.'
+      success: 'Thank you! Our team will contact you within 24 hours.',
+      error:
+        'We couldn’t submit your inquiry right now. Please call us or try again later.'
     },
 
     // FPC (Future)
     fpc: {
       title: 'Farmer Producer Company',
-      comingSoon: 'Coming Soon',
-      description: 'We are working on establishing a Farmer Producer Company to provide better market access, collective bargaining power, and improved income for our member farmers.',
-      benefits: 'Expected Benefits',
-      benefit1: 'Better price realization for farm produce',
-      benefit2: 'Access to bulk inputs at lower prices',
-      benefit3: 'Professional management and market linkages',
-      benefit4: 'Share in company profits',
-      register: 'Register Your Interest',
-      registerDesc: 'Be among the first to know when we launch the FPC'
+      comingSoon: 'Launching Soon',
+      description:
+        'We’re setting up an FPC to unlock collective power—better input prices, direct market access, and shared profits from value addition.',
+      benefits: 'Benefits for Member Farmers',
+      benefit1: 'Better price realization via collective marketing',
+      benefit2: 'Lower input costs through bulk procurement',
+      benefit3: 'Professional management with transparent operations',
+      benefit4: 'Patronage-based dividend sharing for members',
+      register: 'Express Your Interest',
+      registerDesc:
+        'Join the early list to become a founding member when we launch.'
     },
 
     // Export (Future)
     export: {
-      title: 'Export Services',
-      comingSoon: 'Coming Soon',
-      description: 'We are planning to start export services to help farmers access international markets for their high-quality agricultural products.',
-      features: 'Planned Features',
-      feature1: 'International market access',
-      feature2: 'Export documentation support',
-      feature3: 'Quality certification assistance',
-      feature4: 'Logistics and shipping coordination'
+      title: 'Agricultural Export Services',
+      comingSoon: 'Planned Service',
+      description:
+        'We plan to facilitate exports of high-quality regional produce to global markets—meeting standards and fetching premium prices.',
+      features: 'Planned Services',
+      feature1: 'International buyer and market linkages',
+      feature2: 'Export documentation and compliance support',
+      feature3: 'Quality certification and traceability',
+      feature4: 'Logistics coordination and supply chain management'
     },
 
     // Footer
     footer: {
-      about: 'About',
-      aboutText: 'Kanhaiya Krushi Seva Kendra is your trusted partner in agriculture, providing comprehensive services from soil testing to market access.',
+      about: 'About Us',
+      aboutText:
+        'Operating under Kanhaiya Krushi, our Seva Kendra at Jeur in Karmala Taluka serves as a one-stop partner for Solapur’s farmers.',
       quickLinks: 'Quick Links',
       services: 'Services',
       contactUs: 'Contact Us',
-      followUs: 'Follow Us',
+      followUs: 'Connect With Us',
       copyright: '© 2025 Kanhaiya Krushi Seva Kendra. All rights reserved.',
-      developedBy: 'Developed with ❤️ for Indian Farmers'
+      developedBy: 'Proudly serving the farmers of Solapur District'
     },
 
     // Common
@@ -159,7 +176,7 @@ export const translations = {
       cancel: 'Cancel',
       search: 'Search',
       filter: 'Filter',
-      sort: 'Sort',
+      sort: 'Sort By',
       loading: 'Loading...',
       error: 'An error occurred',
       success: 'Success!',
@@ -170,7 +187,7 @@ export const translations = {
   mr: {
     // Navigation
     nav: {
-      home: 'मुखपृष्ठ',
+      home: 'मुख्यपृष्ठ',
       about: 'आमच्याबद्दल',
       services: 'सेवा',
       products: 'उत्पादने',
@@ -182,141 +199,167 @@ export const translations = {
     // Hero Section
     hero: {
       title: 'कन्हैया कृषी सेवा केंद्र',
-      subtitle: 'शेतकऱ्यांचे विश्वासू साथीदार',
-      description: 'मातीची चाचणी ते बाजार पर्यंत सर्वसमावेशक कृषी सेवा पुरवठा',
-      cta: 'सेवा पहा',
-      location: 'जेऊर आणि आसपासच्या भागातील शेतकऱ्यांना सेवा'
+      subtitle: 'सोलापूर जिल्ह्यातील शेतकऱ्यांचा विश्वासार्ह भागीदार',
+      description:
+        'वैज्ञानिक मृदा परीक्षण, प्रमाणित कृषी साहित्य पुरवठा आणि तज्ज्ञांचे शेतपातळीवरील मार्गदर्शन—उत्पादनवाढ व उत्पन्नवाढीसाठी एकत्रित सेवा.',
+      cta: 'आमच्या सेवा पहा',
+      location:
+        'जेऊर, ता. करमाळा तसेच परिसरातील गावांमधील शेतकऱ्यांसाठी उपलब्ध'
     },
 
     // Services
     services: {
-      title: 'आमच्या सेवा',
-      subtitle: 'सर्वसमावेशक कृषी उपाय',
+      title: 'आमच्या कृषी सेवा',
+      subtitle: 'आधुनिक शेतीसाठी एकत्रित व कार्यक्षम उपाय',
       soilTesting: {
-        title: 'मातीची चाचणी',
-        description: 'पीक उत्पादन आणि खतांचा वापर इष्टतम करण्यासाठी व्यावसायिक माती विश्लेषण'
+        title: 'वैज्ञानिक मृदा परीक्षण',
+        description:
+          'प्रयोगशाळाधारित माती विश्लेषण (NPK व सूक्ष्मपोषक द्रव्ये) आणि पिकनिहाय, क्षेत्रनिहाय शिफारसी.'
       },
       fertilizers: {
-        title: 'खते आणि बियाणे',
-        description: 'स्पर्धात्मक दरात दर्जेदार खते, बियाणे आणि कृषी साहित्य'
+        title: 'प्रमाणित कृषी साहित्य',
+        description:
+          'अधिकृत वितरकांकडून उपलब्ध असलेली खरी खते, प्रमाणित बियाणे व पीकसंरक्षण उत्पादने.'
       },
       farmVisits: {
-        title: 'शेती सल्लामसलत',
-        description: 'तज्ञ शेत भेटी आणि वैयक्तिक पीक सल्लागार सेवा'
+        title: 'तज्ज्ञ शेती सल्ला',
+        description:
+          'बियाणे पेरणीपासून कापणीपर्यंत शेतपातळीवरील प्रत्यक्ष तांत्रिक मार्गदर्शन व समस्या निराकरण.'
       },
       marketing: {
-        title: 'बाजार प्रवेश',
-        description: 'शेतकऱ्यांना त्यांचे उत्पादन सर्वोत्तम बाजार भावात विकण्यास मदत'
+        title: 'बाजार जोडणी सहाय्य',
+        description:
+          'शेतमालासाठी विश्वसनीय बाजारपेठ/खरेदीदारांशी संपर्क, योग्य दर शोध व व्यवहार सुलभीकरण.'
       },
-      bookService: 'ही सेवा बुक करा',
-      learnMore: 'अधिक जाणून घ्या'
+      bookService: 'सेवा आरक्षित करा',
+      learnMore: 'अधिक माहिती'
     },
 
     // About
     about: {
       title: 'कन्हैया कृषीबद्दल',
-      mainTitle: 'स्थापनेपासून शेतकऱ्यांना सक्षम करणे',
-      description: 'कन्हैया कृषी ही शेतकऱ्यांना सर्वसमावेशक कृषी सेवा पुरवण्यासाठी समर्पित मुख्य छत्री संस्था आहे. आम्ही सध्या जेऊर येथे कन्हैया कृषी सेवा केंद्र चालवतो, माती चाचणीपासून ते खत विक्री आणि बाजार प्रवेशापर्यंत विविध सेवा प्रदान करतो.',
+      mainTitle: 'स्थापनेपासून शेतकऱ्यांचे सशक्तीकरण',
+      description:
+        'कन्हैया कृषी ही सोलापूर जिल्ह्यातील कृषी विकास व शेतकरी कल्याणासाठी कार्यरत प्रमुख संस्था आहे. जेऊर (ता. करमाळा) येथील “कन्हैया कृषी सेवा केंद्र” याद्वारे मृदा परीक्षण, गुणवत्तापूर्ण इनपुट्स, तांत्रिक सल्लामसलत व बाजार जोडणी अशा एकत्रित सेवा देऊन उत्पादकता व नफाक्षमता वाढविण्यावर आमचा भर आहे.',
       mission: 'आमचे ध्येय',
-      missionText: 'शेतकऱ्यांना आधुनिक कृषी ज्ञान, दर्जेदार साहित्य आणि बाजार प्रवेशाद्वारे सक्षम करणे, त्यांच्या उपजीविकेत सुधारणा करणे आणि शाश्वत शेती पद्धतींमध्ये योगदान देणे.',
+      missionText:
+        'वैज्ञानिक ज्ञान, विश्वासार्ह कृषी साहित्य व बाजारपेठेपर्यंत प्रवेश यांच्या माध्यमातून शेतकऱ्यांचे उत्पन्न वाढवणे व शाश्वत शेती पद्धतींना चालना देणे.',
       vision: 'आमची दृष्टी',
-      visionText: 'महाराष्ट्रातील सर्वात विश्वासू कृषी सेवा प्रदाता बनणे आणि शेतकरी उत्पादक कंपनी (एफपीसी) आणि निर्यात कार्यांद्वारे आमच्या सेवांचा विस्तार करणे.',
-      currentOperations: 'सध्याचे कार्य',
-      operation1: 'जेऊर येथे कन्हैया कृषी सेवा केंद्र',
-      operation2: 'माती चाचणी सेवा',
-      operation3: 'खत आणि कृषी साहित्य विक्री',
-      operation4: 'शेत भेट आणि सल्लागार सेवा',
-      operation5: 'कृषी उत्पादन विपणन',
-      futureExpansion: 'भविष्यातील विस्तार',
-      future1: 'शेतकरी उत्पादक कंपनी (एफपीसी) स्थापना',
-      future2: 'कृषी उत्पादनांसाठी निर्यात सेवा',
-      future3: 'संपूर्ण महाराष्ट्रात अनेक कृषी सेवा केंद्रे',
-      future4: 'शेतकऱ्यांसाठी डिजिटल प्लॅटफॉर्म'
+      visionText:
+        'सोलापूर जिल्ह्यातील सर्वसमावेशक व विश्वासार्ह कृषी सेवा प्रदाता बनणे आणि पुढे महाराष्ट्रभर विस्तार करणे—शेतकरी उत्पादक कंपनी (एफपीसी) व मूल्यवर्धित सेवांद्वारे.',
+      currentOperations: 'जेऊर येथील सध्याचे उपक्रम',
+      operation1: 'कन्हैया कृषी सेवा केंद्र—पूर्णत्वास नेणारे कृषी सेवा केंद्र',
+      operation2:
+        'मृदा परीक्षण प्रयोगशाळा (NPK व सूक्ष्मपोषक द्रव्यांचे विश्लेषण)',
+      operation3:
+        'खते, बियाणे व पीकसंरक्षण उत्पादने—अधिकृत डीलरशिपमार्फत पुरवठा',
+      operation4:
+        'शेतपातळीवरील तांत्रिक सल्लामसलत व पिक व्यवस्थापन मार्गदर्शन',
+      operation5:
+        'शेतमालासाठी बाजार माहिती व जोडणी सहाय्य (दर, मागणी, खरेदीदार)',
+      futureExpansion: 'विस्तार योजना',
+      future1:
+        'सामूहिक खरेदी-विक्रीसाठी शेतकरी उत्पादक कंपनी (एफपीसी) स्थापन',
+      future2: 'प्रदेशातील शेतमालासाठी निर्यात सुलभीकरण सेवा',
+      future3: 'सोलापूर जिल्ह्यात अतिरिक्त सेवा केंद्रांची स्थापना',
+      future4:
+        'रिअल-टाइम कृषी सल्ला व बाजार माहितीसाठी डिजिटल प्लॅटफॉर्म'
     },
 
     // Products
     products: {
-      title: 'आमची उत्पादने',
-      subtitle: 'दर्जेदार कृषी साहित्य',
+      title: 'कृषी उत्पादने',
+      subtitle: 'विश्वासार्ह उत्पादनासाठी गुणवत्तापूर्ण इनपुट्स',
       category: {
         all: 'सर्व उत्पादने',
         fertilizers: 'खते',
         seeds: 'बियाणे',
-        pesticides: 'कीटकनाशके',
-        equipment: 'उपकरणे'
+        pesticides: 'पीकसंरक्षण',
+        equipment: 'शेती अवजारे'
       },
-      inStock: 'स्टॉकमध्ये',
-      outOfStock: 'स्टॉक नाही',
-      inquire: 'आता चौकशी करा',
+      inStock: 'साठा उपलब्ध',
+      outOfStock: 'साठा उपलब्ध नाही',
+      inquire: 'चौकशी नोंदवा',
       viewDetails: 'तपशील पहा'
     },
 
     // Contact
     contact: {
-      title: 'संपर्क साधा',
-      subtitle: 'आमच्याशी संपर्क साधा',
-      getInTouch: 'आम्ही मदतीसाठी येथे आहोत',
-      description: 'प्रश्न किंवा सहाय्य हवे आहे? आमच्याशी संपर्क साधा आणि आम्ही लवकरात लवकर तुमच्याशी संपर्क साधू.',
+      title: 'संपर्क',
+      subtitle: 'आपल्या सेवेसाठी आम्ही तत्पर',
+      getInTouch: 'आमच्या कार्यसंघाशी संपर्क साधा',
+      description:
+        'सेवा, पिक सल्ला किंवा साहित्याबाबत माहिती हवी आहे का? आपली चौकशी नोंदवा—तज्ज्ञ मार्गदर्शन उपलब्ध करून देण्यात येईल.',
       form: {
-        name: 'तुमचे नाव',
-        email: 'ईमेल पत्ता',
-        phone: 'फोन नंबर',
+        name: 'पूर्ण नाव',
+        email: 'ई-मेल पत्ता (पर्यायी)',
+        phone: 'मोबाईल क्रमांक',
         subject: 'विषय',
-        message: 'तुमचा संदेश',
-        service: 'सेवेत स्वारस्य',
+        message: 'संदेश / चौकशी',
+        service: 'रस असलेली सेवा',
         selectService: 'सेवा निवडा',
-        submit: 'संदेश पाठवा',
-        sending: 'पाठवत आहे...'
+        submit: 'चौकशी सबमिट करा',
+        sending: 'सबमिट करत आहोत…'
       },
       info: {
         title: 'संपर्क माहिती',
         address: 'पत्ता',
-        addressValue: 'कन्हैया कृषी सेवा केंद्र, जेऊर, महाराष्ट्र, भारत',
-        phone: 'फोन',
-        email: 'ईमेल',
-        hours: 'कामाचे तास',
-        hoursValue: 'सोमवार - शनिवार: सकाळी ९:०० - संध्याकाळी ६:००'
+        addressValue:
+          'कन्हैया कृषी सेवा केंद्र, जेऊर, ता. करमाळा, जि. सोलापूर, महाराष्ट्र',
+        phone: 'दूरध्वनी',
+        email: 'ई-मेल',
+        hours: 'कार्यालयीन वेळ',
+        hoursValue:
+          'सोमवार ते रविवार: सकाळी ९.०० ते संध्याकाळी ६.०० (दररोज खुले)'
       },
-      success: 'संदेश यशस्वीरित्या पाठवला! आम्ही लवकरच तुमच्याशी संपर्क साधू.',
-      error: 'संदेश पाठवण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा किंवा आमच्याशी थेट संपर्क साधा.'
+      success:
+        'धन्यवाद! आपली चौकशी नोंदवली गेली आहे. आमचा प्रतिनिधी २४ तासांत संपर्क साधेल.',
+      error:
+        'चौकशी सबमिट करण्यात अडचण आली. कृपया दूरध्वनीवर संपर्क करा किंवा थोड्या वेळाने पुन्हा प्रयत्न करा.'
     },
 
     // FPC (Future)
     fpc: {
-      title: 'शेतकरी उत्पादक कंपनी',
-      comingSoon: 'लवकरच येत आहे',
-      description: 'आम्ही आमच्या सदस्य शेतकऱ्यांसाठी चांगला बाजार प्रवेश, सामूहिक सौदेबाजी शक्ती आणि सुधारित उत्पन्न प्रदान करण्यासाठी शेतकरी उत्पादक कंपनी स्थापन करण्यावर काम करत आहोत.',
-      benefits: 'अपेक्षित फायदे',
-      benefit1: 'शेत उत्पादनासाठी चांगले मूल्य प्राप्ती',
-      benefit2: 'कमी किमतीत मोठ्या प्रमाणात साहित्य प्रवेश',
-      benefit3: 'व्यावसायिक व्यवस्थापन आणि बाजार संपर्क',
-      benefit4: 'कंपनीच्या नफ्यात वाटा',
-      register: 'तुमची स्वारस्य नोंदवा',
-      registerDesc: 'आम्ही एफपीसी लाँच करतो तेव्हा प्रथम जाणून घेणाऱ्यांमध्ये व्हा'
+      title: 'शेतकरी उत्पादक कंपनी (एफपीसी)',
+      comingSoon: 'लवकरच उपलब्ध',
+      description:
+        'सदस्य शेतकऱ्यांसाठी सामूहिक सौदाशक्ती, इनपुट्सवरील कमी खर्च, थेट बाजार प्रवेश आणि मूल्यवर्धनातून नफा वाटप सुनिश्चित करण्यासाठी एफपीसी स्थापन करण्याची प्रक्रिया सुरू आहे.',
+      benefits: 'सदस्य शेतकऱ्यांसाठी लाभ',
+      benefit1: 'सामूहिक विपणनातून अधिक दरप्राप्ती',
+      benefit2: 'मोठ्या खरेदीमुळे इनपुट्सचा कमी खर्च',
+      benefit3: 'व्यावसायिक व्यवस्थापन व पारदर्शक कार्यपद्धती',
+      benefit4: 'व्यवहाराधारित (पॅट्रनेज) लाभांश वितरण',
+      register: 'स्वारस्य नोंदवा',
+      registerDesc:
+        'एफपीसी प्रारंभी सुरू होताना संस्थापक सदस्य होण्यासाठी आपले स्वारस्य नोंदवा.'
     },
 
     // Export (Future)
     export: {
-      title: 'निर्यात सेवा',
-      comingSoon: 'लवकरच येत आहे',
-      description: 'शेतकऱ्यांना त्यांच्या उच्च दर्जाच्या कृषी उत्पादनांसाठी आंतरराष्ट्रीय बाजारपेठेत प्रवेश मिळवण्यात मदत करण्यासाठी आम्ही निर्यात सेवा सुरू करण्याची योजना करत आहोत.',
-      features: 'नियोजित वैशिष्ट्ये',
-      feature1: 'आंतरराष्ट्रीय बाजार प्रवेश',
-      feature2: 'निर्यात दस्तऐवज समर्थन',
-      feature3: 'गुणवत्ता प्रमाणन सहाय्य',
-      feature4: 'रसद आणि शिपिंग समन्वय'
+      title: 'कृषी निर्यात सेवा',
+      comingSoon: 'नियोजित सेवा',
+      description:
+        'प्रदेशातील गुणवत्तापूर्ण शेतमाल जागतिक बाजारपेठेत पोहोचवण्यासाठी प्रमाणन, नियमपालन व पुरवठा साखळी व्यवस्थापनासह सुलभ निर्यात सहाय्य.',
+      features: 'नियोजित सेवांचा आवाका',
+      feature1: 'आंतरराष्ट्रीय खरेदीदार व बाजाराशी जोडणी',
+      feature2: 'निर्यात कागदपत्रे व नियामकीय अनुपालन सहाय्य',
+      feature3: 'गुणवत्ता प्रमाणन व ट्रेसिबिलिटी व्यवस्था',
+      feature4: 'लॉजिस्टिक्स समन्वय व पुरवठा साखळी व्यवस्थापन'
     },
 
     // Footer
     footer: {
       about: 'आमच्याबद्दल',
-      aboutText: 'कन्हैया कृषी सेवा केंद्र हे शेतीतील तुमचे विश्वासू साथीदार आहे, माती चाचणीपासून ते बाजार प्रवेशापर्यंत सर्वसमावेशक सेवा प्रदान करते.',
+      aboutText:
+        'कन्हैया कृषी अंतर्गत कार्यरत “कन्हैया कृषी सेवा केंद्र”, जेऊर (ता. करमाळा)—सोलापूर जिल्ह्यातील शेतकऱ्यांचा सर्वसमावेशक कृषी भागीदार.',
       quickLinks: 'द्रुत दुवे',
       services: 'सेवा',
-      contactUs: 'आमच्याशी संपर्क साधा',
-      followUs: 'आम्हाला फॉलो करा',
-      copyright: '© २०२५ कन्हैया कृषी सेवा केंद्र. सर्व हक्क राखीव.',
-      developedBy: 'भारतीय शेतकऱ्यांसाठी ❤️ सह विकसित'
+      contactUs: 'संपर्क',
+      followUs: 'आमच्याशी जुळा',
+      copyright:
+        '© २०२५ कन्हैया कृषी सेवा केंद्र. सर्व हक्क राखीव.',
+      developedBy:
+        'सोलापूर जिल्ह्यातील शेतकऱ्यांच्या सेवेसाठी कटिबद्ध'
     },
 
     // Common
@@ -326,12 +369,12 @@ export const translations = {
       submit: 'सबमिट करा',
       cancel: 'रद्द करा',
       search: 'शोधा',
-      filter: 'फिल्टर',
+      filter: 'गाळणी',
       sort: 'क्रमवारी',
-      loading: 'लोड होत आहे...',
-      error: 'त्रुटी आली',
-      success: 'यश!',
-      required: 'हे फील्ड आवश्यक आहे'
+      loading: 'लोड होत आहे…',
+      error: 'त्रुटी उद्भवली',
+      success: 'कार्य यशस्वी!',
+      required: 'हे क्षेत्र आवश्यक आहे'
     }
   }
 };
