@@ -27,11 +27,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-white p-2 rounded-full">
-              <svg className="w-8 h-8 text-green-800" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
-              </svg>
-            </div>
+            <img src="/assets/logo.png" alt="Kanhaiya Krushi Logo" className="w-8 h-8 rounded-full bg-white p-2" />
             <div className="hidden md:block">
               <h1 className="text-xl font-bold">Kanhaiya Krushi</h1>
               <p className="text-xs text-green-200">Seva Kendra</p>
@@ -44,11 +40,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-lg transition-all duration-300 ${
-                  isActive(link.path)
-                    ? 'bg-green-700 font-semibold'
-                    : 'hover:bg-green-700'
-                }`}
+                className={`px-4 py-2 rounded-lg transition-all duration-300 ${isActive(link.path)
+                  ? 'bg-green-700 font-semibold'
+                  : 'hover:bg-green-700'
+                  }`}
               >
                 {link.label}
               </Link>
@@ -97,11 +92,10 @@ const Navbar = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`px-4 py-3 rounded-lg transition-all duration-300 ${
-                    isActive(link.path)
-                      ? 'bg-green-700 font-semibold'
-                      : 'hover:bg-green-700'
-                  }`}
+                  className={`px-4 py-3 rounded-lg transition-all duration-300 ${isActive(link.path)
+                    ? 'bg-green-700 font-semibold'
+                    : 'hover:bg-green-700'
+                    }`}
                 >
                   {link.label}
                 </Link>
