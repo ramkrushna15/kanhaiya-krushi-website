@@ -35,7 +35,8 @@ const Contact = () => {
 
     try {
       const API_URL = process.env.REACT_APP_API_BASE_URL;
-      await axios.post(`${API_URL}/api/contact/add-contact-info`, formData);
+      // FIX: Use correct endpoint
+      await axios.post(`${API_URL}/contact`, formData);
       
       setStatus({ type: 'success', message: t.contact.success });
       setFormData({
@@ -61,7 +62,6 @@ const Contact = () => {
           <p className="text-xl text-green-100">{t.contact.subtitle}</p>
         </div>
       </section>
-
       {/* Contact Content */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
@@ -155,12 +155,10 @@ const Contact = () => {
                 </button>
               </form>
             </div>
-
-            {/* Contact Information */}
+            {/* Contact Information (unchanged) */}
             <div className="space-y-6">
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <h2 className="text-2xl font-bold text-green-800 mb-6">{t.contact.info.title}</h2>
-                
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="bg-green-100 p-3 rounded-lg">
@@ -173,7 +171,6 @@ const Contact = () => {
                       <p className="text-gray-600">{t.contact.info.addressValue}</p>
                     </div>
                   </div>
-
                   <div className="flex items-start space-x-4">
                     <div className="bg-green-100 p-3 rounded-lg">
                       <svg className="w-6 h-6 text-green-700" fill="currentColor" viewBox="0 0 20 20">
@@ -187,7 +184,6 @@ const Contact = () => {
                       </a>
                     </div>
                   </div>
-
                   <div className="flex items-start space-x-4">
                     <div className="bg-green-100 p-3 rounded-lg">
                       <svg className="w-6 h-6 text-green-700" fill="currentColor" viewBox="0 0 20 20">
@@ -202,7 +198,6 @@ const Contact = () => {
                       </a>
                     </div>
                   </div>
-
                   <div className="flex items-start space-x-4">
                     <div className="bg-green-100 p-3 rounded-lg">
                       <svg className="w-6 h-6 text-green-700" fill="currentColor" viewBox="0 0 20 20">
@@ -216,7 +211,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-
               {/* Quick Links */}
               <div className="bg-gradient-to-br from-green-600 to-green-700 rounded-lg shadow-lg p-8 text-white">
                 <h3 className="text-xl font-bold mb-4">Quick Actions</h3>
