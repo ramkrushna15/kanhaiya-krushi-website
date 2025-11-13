@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 
+const API_URL = process.env.REACT_APP_API_BASE_URL
+
 const Products = () => {
   const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -12,7 +14,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch((process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api') + '/products');
+        const response = await fetch((API_URL) + '/products/get-products');
         if (!response.ok) throw new Error('Failed to fetch products');
         const data = await response.json();
         setProducts(data);

@@ -17,7 +17,7 @@ const createTransporter = () => {
 };
 
 // POST - Create new contact inquiry
-router.post('/', async (req, res) => {
+router.post('/add-contact-info', async (req, res) => {
   try {
     const { name, email, phone, service, message } = req.body;
 

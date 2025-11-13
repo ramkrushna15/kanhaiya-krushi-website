@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../App';
+import img from '../assets/logo.png'
 
 const Navbar = () => {
   const { language, toggleLanguage, t } = useLanguage();
@@ -27,7 +28,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/assets/logo.png" alt="Kanhaiya Krushi Logo" className="w-8 h-8 rounded-full bg-white p-2" />
+            <img src={img} alt="Kanhaiya Krushi Logo" className="w-10 h-10 bg-white" />
             <div className="hidden md:block">
               <h1 className="text-xl font-bold">Kanhaiya Krushi</h1>
               <p className="text-xs text-green-200">Seva Kendra</p>

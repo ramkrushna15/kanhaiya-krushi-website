@@ -3,7 +3,7 @@ const router = express.Router();
 const Product = require('../models/Product');
 
 // GET - Get all products
-router.get('/', async (req, res) => {
+router.get('/get-products', async (req, res) => {
   try {
     const { category, inStock } = req.query;
     let query = {};
