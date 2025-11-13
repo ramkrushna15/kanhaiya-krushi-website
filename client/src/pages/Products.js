@@ -1,67 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 
 const Products = () => {
   const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const products = [
-    {
-      id: 1,
-      name: 'NPK Fertilizer (19:19:19)',
-      category: 'fertilizers',
-      price: '₹850/kg',
-      inStock: true,
-      description: 'Balanced NPK for all crops',
-      image: '🌾'
-    },
-    {
-      id: 2,
-      name: 'Hybrid Tomato Seeds',
-      category: 'seeds',
-      price: '₹450/packet',
-      inStock: true,
-      description: 'High yield tomato variety',
-      image: '🍅'
-    },
-    {
-      id: 3,
-      name: 'Organic Manure',
-      category: 'fertilizers',
-      price: '₹300/kg',
-      inStock: true,
-      description: 'Premium quality organic',
-      image: '♻️'
-    },
-    {
-      id: 4,
-      name: 'Bio-Pesticide',
-      category: 'pesticides',
-      price: '₹650/liter',
-      inStock: true,
-      description: 'Eco-friendly pest control',
-      image: '🛡️'
-    },
-    {
-      id: 5,
-      name: 'Wheat Seeds (HD-2967)',
-      category: 'seeds',
-      price: '₹35/kg',
-      inStock: true,
-      description: 'Premium wheat variety',
-      image: '🌾'
-    },
-    {
-      id: 6,
-      name: 'Drip Irrigation Kit',
-      category: 'equipment',
-      price: '₹12,000/set',
-      inStock: false,
-      description: 'Water-efficient system',
-      image: '💧'
-    }
-  ];
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch((process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api') + '/products');
+        if (!response.ok) throw new Error('Failed to fetch products');
+        const data = await response.json();
+        setProducts(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchProducts();
+  }, []);
 
   const categories = [
     { id: 'all', name: t.products.category.all },
@@ -106,41 +68,51 @@ const Products = () => {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProducts.map(product => (
-              <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 h-48 flex items-center justify-center">
-                  <div className="text-8xl">{product.image}</div>
-                </div>
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-gray-800">{product.name}</h3>
-                    {product.inStock ? (
-                      <span className="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
-                        {t.products.inStock}
-                      </span>
-                    ) : (
-                      <span className="bg-red-100 text-red-800 text-xs font-semibold px-3 py-1 rounded-full">
-                        {t.products.outOfStock}
-                      </span>
-                    )}
+          {loading ? (
+            <div className="text-center py-12">
+              <p className="text-gray-500 text-lg">Loading products...</p>
+            </div>
+          ) : error ? (
+            <div className="text-center py-12">
+              <p className="text-red-500 text-lg">{error}</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredProducts.map(product => (
+                <div key={product._id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                  <div className="bg-gradient-to-br from-green-100 to-green-200 h-48 flex items-center justify-center">
+                    <div className="text-8xl">{product.image || '🌾'}</div>
                   </div>
-                  <p className="text-gray-600 mb-4 text-sm">{product.description}</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-green-700">{product.price}</span>
-                    <Link 
-                      to="/contact" 
-                      className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-colors text-sm font-semibold"
-                    >
-                      {t.products.inquire}
-                    </Link>
+                  <div className="p-6">
+                    <div className="flex justify-between items-start mb-2">
+                      <h3 className="text-xl font-bold text-gray-800">{product.name}</h3>
+                      {product.inStock ? (
+                        <span className="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                          {t.products.inStock}
+                        </span>
+                      ) : (
+                        <span className="bg-red-100 text-red-800 text-xs font-semibold px-3 py-1 rounded-full">
+                          {t.products.outOfStock}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-gray-600 mb-4 text-sm">{product.description}</p>
+                    <div className="flex justify-between items-center">
+                      <span className="text-2xl font-bold text-green-700">{product.price}</span>
+                      <Link 
+                        to="/contact" 
+                        className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-colors text-sm font-semibold"
+                      >
+                        {t.products.inquire}
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
 
-          {filteredProducts.length === 0 && (
+          {!loading && filteredProducts.length === 0 && (
             <div className="text-center py-12">
               <p className="text-gray-500 text-lg">No products found in this category.</p>
             </div>
