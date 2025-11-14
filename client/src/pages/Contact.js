@@ -35,8 +35,8 @@ const Contact = () => {
 
     try {
       const API_URL = process.env.REACT_APP_API_BASE_URL;
-      // FIX: Use correct endpoint
-      await axios.post(`${API_URL}/contact`, formData);
+      // Fixed: Use correct endpoint /contact/add-contact-info
+      await axios.post(`${API_URL}/contact/add-contact-info`, formData);
       
       setStatus({ type: 'success', message: t.contact.success });
       setFormData({
