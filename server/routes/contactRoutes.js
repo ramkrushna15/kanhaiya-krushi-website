@@ -46,8 +46,8 @@ router.post('/add-contact-info', async (req, res) => {
 
         // Email to admin
         const adminMailOptions = {
-          from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
-          to: process.env.EMAIL_USER,
+          from: process.env.EMAIL_FROM,
+          to: process.env.EMAIL_TO,
           subject: `New Contact Inquiry - ${service || 'General'}`,
           html: `
             <h2>New Contact Form Submission</h2>
@@ -67,7 +67,7 @@ router.post('/add-contact-info', async (req, res) => {
         // Confirmation email to customer (if email provided)
         if (email) {
           const customerMailOptions = {
-            from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
+            from: process.env.EMAIL_FROM,
             to: email,
             subject: 'Thank you for contacting Kanhaiya Krushi',
             html: `
