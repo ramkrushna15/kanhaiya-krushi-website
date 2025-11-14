@@ -22,6 +22,7 @@ const Footer = () => {
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-gray-300">Jeur, Maharashtra</span>
+                <a href="https://maps.app.goo.gl/BfzVmKqNvZ2wT1Bt9" target="_blank" rel="noopener noreferrer" className="text-green-400 underline ml-2 text-sm">View on Map</a>
               </div>
             </div>
           </div>
